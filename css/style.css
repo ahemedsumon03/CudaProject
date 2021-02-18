@@ -1,0 +1,629 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.3rem;
+}
+h1{
+    font-size: 4.2rem;
+    color: #fff;
+    margin-top: 6rem;
+    line-height: 5rem; 
+}
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.clearfix::after{
+   content: "";
+   display: flex;
+   clear: both;
+   visibility: hidden;
+}
+header{
+    position: relative;
+    background: linear-gradient(#87509cd7,#87509cd7),url('../img/image1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    height: 85vh;
+}
+header h1{
+    width: 93rem;
+}
+.logo{
+    margin-top: 4rem;
+    float: left;
+    height: 3.5rem;
+    width: auto;
+}
+.text-hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.main-nav{
+    float: right;
+    margin-top: 5rem;
+}
+.main-nav li{
+    margin-right: 1rem;
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+main-nav li:first-child{
+    margin-left: 0rem;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background: rgb(100,58,121,0);
+    padding: .6rem 1rem;
+    font-size: 1.6rem;
+    transition: .3s;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+    background-color: rgb(100,58,121,1);
+}
+
+/* Sticky class */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(135, 80, 156, 0.9);
+    padding: 0.7rem 0;
+    z-index: 9999;
+}
+.sticky .logo{
+    margin-top: 0;
+}
+.sticky .main-nav{
+    margin-top: .6rem;
+}
+
+.mobile-menu span{
+    display: none;
+    color: #fff;
+    font-size: 4rem;
+    float: right;
+    margin-top: 4rem;
+}
+.mobile-menu span:hover{
+    cursor: pointer;
+}
+.overlay{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .5s;
+}
+.overlay-content{
+    position: relative;
+    top: 15%;
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+.overlay-content a{
+    text-decoration: none;
+    display: block;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    line-height: 4.7rem;
+    text-transform: uppercase;
+    color: #333;
+}
+.overlay-content a:hover{
+    color: #fff;
+}
+.closebtn{
+    position: absolute;
+    top: 5rem;
+    right: 4.5rem;
+    font-size: 5rem;
+    text-decoration: none;
+    color: #fff;
+}
+.sticky .mobile-menu span{
+    margin-top: 1rem;
+}
+.active{
+    background-color: rgb(100,58,121,1);
+}
+.btn:link,
+.btn:visited,
+.btn{
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   background: #333;
+   padding: 1.5rem 6rem;
+   display: inline-block;
+   border-radius: .3rem;
+   margin-top: 2rem;
+   border-bottom: .3rem solid #000;
+   font-size: 1.6rem;
+}
+.btn-color:link,
+.btn-color:visited{
+    margin-top: 7rem;
+    background: #eb7d4b;
+    border-color: #c86a40;
+}
+
+#service-section{
+   background: linear-gradient(#17c2a3d9,#17c2a3e9),url('../img/image2.jpg');
+   padding: 8rem 0;
+   text-align: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center top;
+}
+#service-section h3{
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: .3rem;
+}
+#service-section h3::after{
+    content: '';
+    display: block;
+    height: .3rem;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 2.5rem;
+    background: #14a58c;
+}
+#service-section .little-description{
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+}
+#service-section .service-icon{
+    margin-bottom: 6rem;
+}
+#service-section h4{
+    font-size: 2.4rem;
+    color: #fff;
+    margin-right: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 2.3rem;
+}
+#service-section .para{
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 2.2rem;
+    font-weight: 400;
+    width: 19.2rem;
+    margin-left: 3.2rem;
+}
+
+/* Team role section */
+
+#team-section{
+    background: linear-gradient(#3e464bb4,#3e464bb4),url('../img/naturethree.jpg');
+    padding: 8rem 0;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#team-section h3{
+    font-size: 4.1rem;
+    font-weight: 700;
+    color: #fff;
+}
+#team-section h3::after{
+    content: '';
+    display: block;
+    height: .3rem;
+    width: 8.5rem;
+    margin: auto;
+    background: #dfe8ed;
+    margin-top: 2.5rem;
+}
+#team-section .little-description{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 6rem;
+}
+#team-section .team-row{
+    margin-top: 3rem;
+}
+#team-section .image{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+#team-section h4{
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+#team-section .role{
+    font-size: 1.6rem;
+    color: #30bae7;
+    line-height: 4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#team-section .para{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 300;
+    width: 20.1rem;
+    height: 12rem;
+    margin-left: 3.5rem;
+    line-height: 2.1rem;
+    margin-top: 1rem;
+}
+#team-section ul{
+    margin: 0;
+    padding: 0;
+}
+#team-section ul li{
+    display: inline-block;
+    margin-top: 2rem;
+}
+#team-section ul li a:link{
+    padding-right: 1rem;
+    
+}
+#team-section ul li a i::before{
+    background: #bdd1df;
+    height: 2rem;
+    width: 2rem;
+    padding-top: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+    display:inline-block;
+    border-radius: 50%;
+    transition: .5s;
+}
+#team-section ul li a i{
+    color: #fff;
+    font-size: 1.4rem;
+}
+#team-section ul li a:hover i::before{
+    color: #fff;
+    transform: rotate(360deg);
+    background: #393939;
+}
+
+/* Skill section */
+
+#skill-section{
+    background:linear-gradient(#fff,rgba(255, 255, 255, 0.6)),url('../img/natureone.jpg');
+    padding: 8rem 0;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+#skill-section h3{
+    font-size: 4rem;
+    color: #3c4761;
+}
+#skill-section h3::after{
+    content: '';
+    display: block;
+    height: .3rem;
+    width: 8.5rem;
+    margin: auto;
+    background: #dfe8ed;
+    margin-top: 2.5rem;
+}
+#skill-section .little-description{
+    color: #3c4761;
+    width: 58rem;
+    margin:auto;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+#skill-section svg.radial-progress circle{
+    stroke-width: 5;
+}
+#skill-section svg.radial-progress text{
+    fill:#3c4761;
+    font-size: 1.5rem;
+    
+}
+#skill-section svg.web-design circle{
+    stroke: #30bae7;
+}
+#skill-section svg.html_css circle{
+    stroke: #d74680;
+}
+#skill-section svg.grapic_design circle{
+    stroke: #15c7a8;
+}
+#skill-section svg.ui-ux circle{
+    stroke: #eb7d4b;
+}
+#skill-section h4{
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#skill-section .give-padding{
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+}
+
+/* portfolio section*/
+
+#portfolio-section{
+    padding: 8rem 0;
+    background: linear-gradient(#ffdd99a2,#30250f), url('../img/naturetwo.jpg');
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+#portfolio-section h2{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+}
+#portfolio-section h2::after{
+    content: '';
+    display: block;
+    height: .3rem;
+    width: 8.5rem;
+    margin: auto;
+    background: #dfe8ed;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+#portfolio-section .little-description{
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 52.5rem;
+    height: 4.7rem;
+    text-align: center;
+    margin: auto;
+    line-height: 2.2rem;
+    color: #fff;
+}
+#portfolio-section .below-row{
+    margin-top: 3rem;
+}
+#portfolio-section  button{
+    margin-top: 2rem;
+    width: 6rem;
+    height: 2.7rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    background: #ebc985;
+    border:0;
+    transition: .5s;
+
+}
+#portfolio-section  button:hover{
+    background: #000;
+    border-color: #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: inset 0 .3rem .3rem  rgba(60, 71, 97, 0.5);
+}
+#portfolio-section .portfolio-image{
+    width: 100%;
+    height: 30rem;
+}
+#portfolio-section h4{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    color: #fff;
+}
+#portfolio-section .row.row-below{
+    margin-top: 3rem;
+}
+#portfolio-section .col:nth-child(3){
+    margin-left: 0;
+}
+
+/* portfolio section*/
+
+#testimonial-section{
+    background: linear-gradient(#d74680bc,#d74680bc),url('../img/testimonial-bg.jpg');
+    padding: 8rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#testimonial-section h2{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+#testimonial-section h2::after{
+    content: '';
+    display: block;
+    height: .3rem;
+    width: 8.5rem;
+    margin: auto;
+    background: #b73c6d;
+    margin-top: 2.5rem;
+}
+#testimonial-section .little-description{
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 1.8rem;
+}
+#testimonial-section .testimonial-image{
+    width: 8rem;
+    float: left;
+}
+#testimonial-section .testimonial-image img{
+    height: 8rem;
+    border-radius: 50%;
+}
+#testimonial-section .col:nth-child(3){
+    margin-left: 0;
+}
+#testimonial-section .col:nth-child(1),
+#testimonial-section .col:nth-child(2){
+    margin-top: 6rem;
+}
+#testimonial-section .col:nth-child(3),
+#testimonial-section .col:nth-child(4){
+    margin-top: 8rem;
+}
+#testimonial-section .client-review{
+    width: 30rem;
+    float: left;
+    margin-left: 4rem;
+}
+#testimonial-section .client-talk{
+    font-size: 2.1rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #fff;
+    width: 34rem;
+    line-height: 2.5rem;
+}
+#testimonial-section .client-name{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+#testimonial-section span{
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #ffdd99;
+    line-height: 4rem;
+}
+
+/* Contact section */
+
+#contact-section{
+    padding: 8rem 0;
+    background: linear-gradient(#3c5399c4,#3c5399c4),url('../img/contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+}
+#contact-section h2{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+}
+#contact-section h2::after{
+    content: '';
+    display: block;
+    height: .3rem;
+    width: 8.5rem;
+    margin: auto;
+    background: #273a71;
+    margin-top: 2.5rem;
+}
+#contact-section .little-description{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 2rem;
+}
+#contact-section form{
+    margin-top: 6rem;
+    width: 70%;
+    margin-left: 15%;
+}
+#contact-section form input[type='text'],
+#contact-section form input[type='email'],
+#contact-section form textarea{
+    width: 100%;
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    background: #273a71;
+    color: #fff;
+    border: 1px solid #273a71;
+}
+#contact-section form ::placeholder{
+    color: #fff;
+    opacity:0.8;
+}
+#contact-section form textarea{
+    margin-top: 2rem;
+}
+#contact-section .btn{
+    border: 0;
+    
+}
+#contact-section .btn-color{
+    background: #30bae7;
+    border-bottom: .3rem solid #299ec5;
+}
+#contact-section .btn:hover{
+    cursor: pointer;
+}
+
+/* Footer section*/
+
+#footer-section{
+    background: #344b8e;
+    border-top: 1px solid #3c5499;
+    text-align: center;
+    padding: 4.5rem 0;
+}
+#footer-section li{
+   display: inline-block;
+   margin:0 3rem;
+}
+#footer-section li a{
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 2.4rem;
+}
+#footer-section li a:hover{
+    color: #30bae7;
+}

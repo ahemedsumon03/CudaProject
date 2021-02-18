@@ -1,0 +1,364 @@
+@media only screen and (max-width:1024px){
+    .row{
+        margin: 0 15px;
+    }
+    .text-hero{
+        margin-top: 40px;
+    }
+    .main-nav{
+        display: none;
+    }
+    .text-hero .btn{
+        margin-bottom: 15px;
+    }
+    html{
+        font-size: 57.5%;
+    }
+    #testimonial-section .testimonial-image{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-left: 25px;
+    }
+    
+    #testimonial-section .client-review{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+    }
+    #testimonial-section .client-talk{
+        text-align: center;
+        margin: auto;
+    }
+    #contact-section form{
+        width: 100%;
+        margin-left: 0;
+    }
+    .mobile-menu span{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:980px){
+    .span_1_of_4{
+        width: 49.2%;
+    }
+    .span_1_of_4:nth-child(3){
+        margin-left: 0;
+    }
+    #team-section .para{
+        margin: auto;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    #team-section .col:nth-child(3),
+    #team-section .col:nth-child(4){
+        margin-top: 20px;
+    }
+    #skill-section .col:nth-child(1),
+    #skill-section .col:nth-child(2){
+        margin-bottom: 10px;
+    }
+    #skill-section .col:nth-child(3),
+    #skill-section .col:nth-child(4){
+        margin-top: 50px;
+    }
+    #service-section .para{
+        margin: auto;
+    }
+    #service-section .service-icon{
+        margin-bottom: 25px;
+    }
+    #service-section .service-information{
+        margin-top: 30px;
+    }
+    #service-section .service-information:nth-child(3),
+    #service-section .service-information:nth-child(4){
+        margin-top: 30px;
+    }
+    #service-section .col:nth-child(3),
+    #service-section .col:nth-child(4){
+        margin-top: 50px;
+    }
+
+    #footer-section li{
+        margin: 0 20px;
+    }
+    .text-hero .btn{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    header h1{
+        width: 600px;
+        margin-bottom: 50px;
+        margin-top: 70px;
+        font-size: 35px;
+    }
+    .text-hero .btn-color{
+        margin-bottom: 75px;
+    }
+    #testimonial-section .span_1_of_2{
+        width: 100%;
+        
+    }
+    #testimonial-section .col:nth-child(1){
+        margin-right: 50px;
+    }
+    #testimonial-section .col:nth-child(2){
+        margin-right: 50px;
+    }
+    #testimonial-section .col:nth-child(3){
+        margin-left: 20px;
+    }
+    #testimonial-section .col:nth-child(4){
+        margin-left: 30px;
+    }
+    header .logo{
+        margin-top: 2.7rem;
+    }
+    #contact-section .little-description{
+        width: 70%;
+        line-height: 30px;
+        margin-left: 15%;
+    }
+    #footer-section li{
+        margin: 0 10px;
+    }
+    #footer-section li a{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:768px){
+    header h1{
+        width: 480px;
+        font-size: 28px;
+        margin-top: 75px;
+    }
+    #service-section h3{
+        line-height: 50px;
+    }
+
+    #service-section .span_1_of_4{
+        width: 100%;
+    }
+
+    #service-section .col:nth-child(2){
+        margin-top: 40px;
+    }
+    #service-section .col:nth-child(4){
+        margin-top: 40px;
+    }
+
+    #team-section h3{
+        line-height: 50px;
+    }
+    #team-section .little-description{
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    #team-section .span_1_of_4{
+        width: 100%;
+    }
+    #skill-section .little-description{
+        width: 430px;
+    }
+    #skill-section .span_1_of_4{
+        width: 100%;
+    }
+    #skill-section .col:first-child{
+        margin-bottom: 30px;
+    }
+    #portfolio-section .little-description{
+        width: 420px;
+    }
+    #portfolio-section button{
+        margin-top: 40px;
+    }
+    #portfolio-section .col:nth-child(2),
+    #portfolio-section .col:nth-child(3),
+    #portfolio-section .col:nth-child(4){
+        margin-top: 22px;
+    }
+    #testimonial-section h2{
+        line-height: 48px;
+    }
+    #testimonial-section .testimonial-image{
+        width: 100%;
+        margin-left: -16px;
+    }
+    #testimonial-section .client-review{
+        margin-left: 6px;
+    }
+    #testimonial-section .client-review:last-child{
+        margin-left: -6px;
+    }
+    #footer-section li a{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:820px) and (max-width:860px){
+   header h1{
+       font-size: 35px;
+       width: 800px;
+   }
+   #testimonial-section .testimonial-image{
+       width: 100%;
+       margin-left: -15px;
+   }
+   #testimonial-section .client-review{
+       margin-left: 5px;
+   }
+   #footer-section li{
+       margin: 0 8px;
+   }
+}
+
+@media (min-width:769px) and (max-width:819px){
+    header h1{
+        width: 720px;
+        font-size: 32px;
+    }
+    #testimonial-section .testimonial-image{
+        width: 100%;
+        margin-left: -10px;
+    }
+    #testimonial-section .client-review{
+        margin-left: 0px;
+    }
+    #footer-section li{
+        margin: 0px 4px;
+    }
+}
+
+@media (min-width:861px) and (max-width:980px){
+    header h1{
+        font-size: 32px;
+    }
+    #testimonial-section .testimonial-image{
+        width: 100%;
+        margin-left: -12px;
+    }
+    #testimonial-section .client-review{
+        width: 100%;
+        margin-left: -5px;
+    }
+    #footer-section li{
+        margin: 0 10px;
+    }
+}
+
+@media (min-width:981px) and (max-width:1024px){
+    #testimonial-section .testimonial-image{
+        width: 100%;
+        margin-left: -13px;
+    }
+    #testimonial-section .client-review{
+        width: 100%;
+        margin-left: -8px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1150px){
+    .logo{
+        margin-left: 18px;
+    }
+    header h1{
+        margin-top: 130px;
+    }
+    #testimonial-section .testimonial-image{
+        width: 100%;
+        float: none;
+        margin-left: 145px;
+        margin-bottom: 20px;
+    }
+    #testimonial-section .client-review{
+        width: 100%;
+        float: none;
+        margin-left: 66px;
+    }
+    #testimonial-section .client-name{
+        margin-left: 32px;
+    }
+    #testimonial-section span{
+        margin-left: 32px;
+    }
+    #footer-section li{
+        margin: 0 20px;
+    }
+}
+
+@media(min-width:320px) and (max-width:479px){
+    header h1{
+        width: 295px;
+        font-size: 19px;
+        line-height: 44px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .text-hero .btn{
+        width: 211px;
+    }
+    .text-hero a:link,
+    .text-hero a:visited,
+    .text-hero .btn{
+        font-size: 11px;
+    }
+    #service-section h3{
+        font-size: 30px;
+    }
+    #team-section h3{
+        font-size: 30px;
+    }
+    #skill-section h3{
+        font-size: 30px;
+    }
+    #skill-section .little-description{
+        width: 288px;
+    }
+    #portfolio-section h2{
+        font-size: 30px;
+    }
+    #portfolio-section .little-description{
+        width: 288px;
+        margin-bottom: 20px;
+    }
+    #testimonial-section h2{
+        font-size: 30px;
+    }
+    #testimonial-section .client-talk{
+        font-size: 18px;
+        width: 286px;
+    }
+  
+    #testimonial-section .testimonial-image img:nth-child(4){
+           width: 100%;
+           margin-left: -15%;        
+    }
+
+    #testimonial-section .four-talk{
+        width: 100%;
+        margin-left: -20px; 
+    }
+    #testimonial-section .image_four{
+        width: 100%;
+        margin-left: -28px;
+
+    }
+    #testmonial-section .four-talk h3{
+        width: 100%;
+        margin-left: -80px;
+    }
+    #testmonial-section .client-four-name{
+        width: 100%;
+        margin-left: -10px;
+    }
+    #footer-section li{
+        margin: 6px 10px;
+    }
+}
